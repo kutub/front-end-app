@@ -1,0 +1,32 @@
+<div class="grid-container full" id="subject-page-container">
+    <header class="grid-x">
+        <div class="cell  medium-8 medium-offset-2">
+            <img src="/assets/images/study-image.jpg" alt=""/>
+        </div>
+    </header>
+    <section class="grid-x">
+            <div class="cell medium-8 medium-offset-2">
+                <div  *ngFor="let subject of subjects" class="grid-x" style="border-bottom: 1px solid #e2e2e2;padding-top: 30px; padding-bottom: 30px;">
+                    <div class="cell medium-3">
+                        <div class="grid-x">
+                            <div class="cell">
+                                <h4>{{subject.subject}}</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell medium-9">
+                        <div class="grid-x">
+                            <!--{% for lesson in syllabus.subject_list.all %}-->
+                            <div class="cell medium-4" *ngFor="let lesson of subject.subject_list">
+                                <a href="{% url 'reading_list' lesson.lesson_name %}"><h5>{{lesson.lesson_name}}</h5></a>
+                            </div>
+                            <!--{% endfor %}-->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+</div>

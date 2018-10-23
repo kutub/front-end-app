@@ -1,1 +1,250 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/foundation-sites/assets/foundation";
+
+
+@font-face {
+    font-family: kalpurush;
+    src: url(/assets/fonts/kalpurush.ttf);
+}
+@font-face {
+    font-family: varela;
+    src: url(/assets/fonts/VarelaRound-Regular.ttf);
+}
+
+html, body, h1, h2, h3, h4, h5{
+    font-family: varela,  'kalpurush';
+}
+
+#responsive-menu{
+    background-color: #ffffff;
+    box-shadow: 0 0 60px rgba(51, 51, 51, 0.1);
+}
+#responsive-menu .menu{
+    background-color: #ffffff;
+}
+.grid-container{
+    position: relative;
+}
+#value-proposition-container{
+    position: absolute;
+    top: 20%;
+}
+
+.value-proposition h5{
+    color: #616161;
+    line-height: 1.4em;
+}
+.value-proposition h4{
+    color: #444;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+
+#content-container{
+    background-color: #F2F2F2;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+#start-trigger-button .button{
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-top: 40px;
+    background-color: #5BBC2E;
+    margin-right: 15px;
+}
+
+#content-container .service-item .image {
+    margin-bottom: 50px;
+
+}
+#content-container .service-item .image img{
+    height: 150px;
+}
+
+#event-container{
+    padding-top: 112px;
+    padding-bottom: 120px;
+}
+
+#event-title{
+    padding-bottom: 50px;
+}
+#event-container .event-teaser{
+    padding-right: 40px;
+    padding-left: 30px;
+}
+#event-container .event-date h1 {
+    color: #5bbc2e;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 54px;
+    letter-spacing: 2px;
+}
+#event-container .event-item{
+    margin-bottom: 60px;
+}
+#event-container .event-item .event-image{
+    height: 180px;
+    background-color: #83C365;
+    border-radius: 10px;
+}
+
+#event-container .event-date .underlined{
+    height: 1px;
+    background-color: #e2e2e2;
+    width: 100%;
+}
+#event-container .event-date p{
+    color: #666666;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 15px;
+}
+#event-container .event-teaser a {
+    color: #222222;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+#event-container .event-teaser p{
+    color: #666666;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+.registration-container{
+    position: relative;
+}
+.registration-container .background-image{
+    background-image: url("/static/images/training-univer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+}
+
+.registration-container .content{
+    background: rgba(0,0,0, 0.9);
+    color: #ffffff;
+    padding: 120px 0;
+    position: absolute;
+    top: 0;
+     height: 450px;
+    width: 100%;
+}
+
+.registration-container .content .button {
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #0000FF;
+
+}
+
+#news-container{
+    background-color: #F2F2F2;
+    padding: 120px 0;
+}
+
+#section-title{
+    margin-bottom: 60px;
+}
+
+#news-container .news-item-first .card{
+    border-radius: 10px;
+}
+
+#news-container .news-item-first .card-section{
+    padding: 40px;
+}
+
+#news-container .news-item-list{
+    padding: 0 30px !important;
+}
+
+#news-container .news-item-list .image img{
+    border-radius: 5px;
+}
+
+#mission-container {
+    padding: 120px 0;
+
+}
+
+#mission-container .mission-content{
+    padding-right: 30px;
+}
+
+#mission-container .mission-content p {
+    color: #666666;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: .6;
+    margin-bottom: 30px;
+}
+
+#mission-container .mission-video img{
+  border-radius: 8px;
+}
+#mission-container .mission-video{
+    position: relative;
+    padding-left: 20px;
+}
+#mission-container .mission-video div{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+#mission-container .mission-video div img{
+    width: 80px;
+}
+
+#testimonial-container{
+    background-color: #F2F2F2;
+    padding: 120px 0;
+}
+
+#testimonial-container .testimonial-panel .testimonial-img img{
+    border-radius: 100%;
+}
+
+#testimonial-container #testimonial-title{
+    margin-bottom: 50px;
+}
+
+#testimonial-container #testimonial-img-sec{
+    margin-bottom: 40px;
+}
+
+#testimonial-container #testimonial-quote .name{
+    margin-top: 30px;
+}
+
+#testimonial-container #testimonial-quote .btn-slide-change{
+    margin-top: 50px;
+}
+
+#question-container {
+    background-color: #5BBC2E;
+    padding: 50px 0;
+
+}
+#question-container h2{
+    color: #ffffff
+}
+#question-container .button{
+    background-color: #333333;
+    font-size: 1.3em;
+    border-radius: 8px;
+}
+
+#subject-page-container{
+    background-color: #F2F2F2;
+}
